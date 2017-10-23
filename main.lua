@@ -233,7 +233,7 @@ function triggerMultiplayer( )
 		if( event.payload ) then
 	    	if (tonumber(event.payload )) then -- handle
 	    		if (event.fromPlayerID ~= myPlayerId) then -- not my data
-	        		otherPlayerNum = tonumber(eevent.payload)
+	        		otherPlayerNum = tonumber(event.payload)
 	        	end
 	        	if (otherPlayerNum < myPlayerNum) then
 	        		myType = "X"
